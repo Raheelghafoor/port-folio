@@ -1,0 +1,85 @@
+.footer {
+    background: radial-gradient(farthest-corner at 100% 0%, 
+    #5c5e62 0%,
+    #0c0f14 100%);
+
+    .container {
+
+        .footer-wrapper {
+
+            .bottom-footer {
+                padding: 10px 0;
+
+                .bottom-foote-row {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+
+                    @media (max-width: 767.5px) {
+                        flex-direction: column;
+                    }
+
+                    p.text {
+                        font-size: 16px;
+                        font-weight: 500;
+                        line-height: 22px;
+                        font-style: normal;
+                        color: #ffffff;
+                        margin-bottom: 0px;
+                        text-align: center;
+
+                        span {
+                            font-weight: 600;
+                        }
+                    }
+
+                    ul.menu-items {
+                        margin: 10px 0;
+                        list-style-type: none;
+                        padding-left: 0;
+                        display: flex;
+                        align-items: center;
+                        flex-wrap: wrap;
+                        row-gap: 20px;
+
+                        @media (max-width: 767.5px) {
+                            row-gap: 10px;
+                        }
+
+                        li.menu-item {
+                            padding: 0 25px;
+                            border-right: 1px solid #fff;
+
+                            @media (max-width: 767.5px) {
+                                padding: 0 15px;
+                            }
+
+                            &:first-child {
+                                padding-left: 0;
+                            }
+
+                            &:last-child {
+                                border-right: none;;
+                            }
+
+                            a {
+                                text-decoration: none;
+
+                                img {
+                                    height: 25px;
+                                    width: 25px;
+                                    filter:  brightness(0) invert(1);
+
+                                    @media (max-width: 992px) {
+                                        height: 20px;
+                                        width: 20px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
